@@ -45,3 +45,14 @@ class Credentials:
         method to delete an account
         '''
         Credentials.account_credentials.remove(self)
+
+    @classmethod
+    def password_generate(cls):
+        '''
+        class method to generate random password
+        '''
+        password_length =8
+        possible_characters = "@abcdefghijklmnopqrstuvwxyz-1234567890&ABCDEFGHIJKLMNOPQRSTUVWXYZ!"
+        random_character = [random.choice(possible_characters) for i in range(password_length)]
+        auto_password = "".join(random_character)
+        return auto_password
