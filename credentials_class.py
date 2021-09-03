@@ -63,4 +63,12 @@ class User_classTest(unittest.TestCase):
         '''
         test method to check if user can add many accounts
         '''
-        
+        self.new_account.save_account()
+        another_account = Credentials("Twitter", "Edu", "Kenya123")
+        another_account.save_account()
+        self.assertEqual(len(Credentials.account_credentials),2)
+
+    def test_delete_account(self):
+        '''
+        test method to check if an account has been deleted
+        '''
