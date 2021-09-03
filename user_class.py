@@ -25,3 +25,16 @@ class Credentials:
     class that creates new account credentials
     '''
     account_credentials=[] # list of accounts
+
+    def __init__(self, account_name, username, password = None):
+        '''
+        method to initialize account object
+        '''
+        self.account_name = account_name
+        self.username = username
+        self.password = password if password else Credentials.password_generate()
+
+    def save_account(self):
+        '''
+        method to save account object
+        '''
