@@ -85,3 +85,12 @@ class User_classTest(unittest.TestCase):
         self.new_account.save_account()
         another_account = Credentials("Twitter", "Edu")
         another_account.save_account()
+
+    def test_display_accounts(self):
+        '''
+        test method to check displaying of accounts
+        '''
+        self.new_account.save_account()
+        another_account = Credentials("Twitter","Chris", "Mulili")
+        another_account.save_account()
+        self.assertEqual(Credentials.display_accounts(), Credentials.display_accounts)
