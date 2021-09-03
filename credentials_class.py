@@ -72,3 +72,16 @@ class User_classTest(unittest.TestCase):
         '''
         test method to check if an account has been deleted
         '''
+        self.new_account.save_account()
+        another_account = Credentials("Twitter", "Edu", "Morgan")
+        another_account.save_account()
+        self.new_account.delete_account()
+        self.assertEqual(len(Credentials.account_credentials),1)
+
+    def test_password_autogenerate(self):
+        '''
+        test method to test auto generation of passwords
+        '''
+        self.new_account.save_account()
+        another_account = Credentials("Twitter", "Edu")
+        another_account.save_account()
