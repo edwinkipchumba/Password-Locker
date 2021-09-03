@@ -30,3 +30,37 @@ class UserTest(unittest.TestCase):
         '''
         self.new_user.save_user()
         self.assertEqual(len(User.data_user), 1)
+
+class User_classTest(unittest.TestCase):
+    def setUp(self):
+        '''
+        method run before each test
+        '''
+        self.new_account = Credentials("instagram","Mary","myPassword")
+
+    def tearDown(self):
+        '''
+        method run fter each test
+        '''
+        Credentials.account_credentials = []
+
+    def test_init(self):
+        '''
+        test to check for proper initialization
+        '''
+        self.assertEqual(self.new_account_name,"instagram")
+        self.assertEqual(self.new_account.username,"Mary")
+        self.assertEqual(self.new_account.password,"myPassword")
+
+    def test_save_account(self):
+        '''
+        test method that checks if account has been saved
+        '''
+        self.new_account.save_account()
+        self.assertEqual(len(Credentials.account_credentials),1)
+
+    def test_save_multiple(self):
+        '''
+        test method to check if user can add many accounts
+        '''
+        
