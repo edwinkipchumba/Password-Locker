@@ -23,3 +23,10 @@ class UserTest(unittest.TestCase):
         '''
         self.assertTrue(self.new_user.owner,"James")
         self.assertTrue(self.new_user.key, "Doe")
+
+    def test_save_user():
+        '''
+        test method to test if user has been saved into class list
+        '''
+        self.new_user.save_user()
+        self.assertEqual(len(User.data_user), 1)
