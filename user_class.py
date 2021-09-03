@@ -11,3 +11,11 @@ class User:
       ''''
       method to initialize user object
       '''
+      self.owner = owner
+      self.key = key
+
+    def save_user(self):
+       ''''
+       method to save user object
+       '''
+       User.data_user.append(self)
