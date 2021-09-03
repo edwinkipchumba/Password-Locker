@@ -46,7 +46,8 @@ $ ./test_class.py
 $ python3.8 test_class.py
 ```
 
-## Technology ussed
+## Technology used
+
 * python3.8
 
 ## Known Bugs
