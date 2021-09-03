@@ -19,3 +19,9 @@ class User:
        method to save user object
        '''
        User.data_user.append(self)
+
+class Credentials:
+    '''
+    class that creates new account credentials
+    '''
+    account_credentials=[] # list of accounts
