@@ -56,3 +56,11 @@ class Credentials:
         random_character = [random.choice(possible_characters) for i in range(password_length)]
         auto_password = "".join(random_character)
         return auto_password
+
+    @classmethod
+    def display_accounts(cls):
+        '''
+        class method to display all accounts
+        '''
+        return cls.account_credentials
+       
