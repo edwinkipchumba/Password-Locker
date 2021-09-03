@@ -64,3 +64,20 @@ class Credentials:
         '''
         return cls.account_credentials
        
+    @classmethod
+    def search_accounts(cls, search):
+        '''
+        class method to search for an account 
+        '''
+        for acc in cls.account_credentials:
+            if acc.account_name == search:
+                return acc
+
+    @classmethod
+    def copy_password(cls):
+        '''
+        method to copy passwords
+        '''
+        for acc in cls.account_credentials:
+            pyperclip.copy(acc.password)
+            pyperclip.paste()
