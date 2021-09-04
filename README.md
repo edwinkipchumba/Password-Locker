@@ -29,7 +29,7 @@ https://github.com/edwinkipchumba/Password-Locker
 * pyperclip
  
  #### Cloning
- 
+
 * Open Terminal {Ctrl+Alt+T}
 
 ```
@@ -67,4 +67,4 @@ If you find a bug, kindly feel free to comment an issue here and inlcude their c
  E-Mail: edwinkolem5@gmail.com.
 
 ## License
-[MIT License](https://choosealicense.com/licenses/mit/) ©2021, Kolem Edwin
+https://github.com/edwinkipchumba/Password-Locker/blob/master/LICENSE
