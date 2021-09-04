@@ -64,7 +64,7 @@ class User_classTest(unittest.TestCase):
         test method to check if user can add many accounts
         '''
         self.new_account.save_account()
-        another_account = Credentials("Twitter", "Edu", "Kenya123")
+        another_account = Credentials("Twitter", "Edu", "Kenya@123")
         another_account.save_account()
         self.assertEqual(len(Credentials.account_credentials),2)
 
@@ -94,3 +94,15 @@ class User_classTest(unittest.TestCase):
         another_account = Credentials("Twitter","Chris", "Mulili")
         another_account.save_account()
         self.assertEqual(Credentials.display_accounts(), Credentials.display_accounts)
+
+    def test_search_accounts(self):
+        '''
+        test method to test search functionality
+        '''
+        self.new_account.save_account()
+        another_account =Credentials("Twitter", "Edu", "Kenya@123")
+        another_account.save_account()
+        self.assertEqual(another_account,Credentials.search_accounts("Twitter"))
+
+if __name__ == '__main__':
+    unittest.main
