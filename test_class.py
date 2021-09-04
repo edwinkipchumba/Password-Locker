@@ -69,7 +69,30 @@ def main():
         lock_owner = input()
         if not lock_owner:
             print("Please enter your encrypting details")
-            
+
         else:
-                print("Enter your password")
+            print("Enter your password")
+            lock_key = input()
+        if not lock_key:
+            print("Please provide correct details")
+
+        else:
+            save_user(create_user(lock_owner, lock_key))
+            print("-"*10)
+            print(f"{lock_owner}, Please enter your password again to login.")
+            confirm = input()
+
+        if confirm == lock_key:
+            print("\n You are successfully logged in!")
+            while True:
+                print("-"*10)
+                print("what would you like to do today? \n Use these short codes : \n\t\t aa - Add an account using your own words \n\t\t ga - Generate a password for your new account \n \t\t da - Display saved accounts \n \t\t sa -Search for an account \n \t\t d - Delete an account \n \t\t ex - Exit the password locker")
+                short_code = input().lower()
+
+                if short_code == "aa":
+                    print("-"*10)
+                    print("Enter an existing account")
+                    print("Account name...(e.g: Facebook)")
+
+                    # account
 
