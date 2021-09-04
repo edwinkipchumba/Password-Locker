@@ -24,7 +24,7 @@ https://github.com/edwinkipchumba/Password-Locker
 |da|Your account has been created successfully|New account:facebook username: da.. password: e9gv&1&z|
 |sa|Enter an account type to search eg facebook facebook|Here's what we've found "account name and password"|
 |d|Enter the account name for the record you want to delete e.g facebook facebook| The account has been deleted successfully. Here is a list of your remaining accounts|
-|ex||Have a nice, edu|
+|ex||Have a nice day, edu|
 
 
 
