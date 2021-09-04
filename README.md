@@ -24,6 +24,12 @@ https://github.com/edwinkipchumba/Password-Locker
 
 ## Installation/Setup instruction
 
+#### The application requires the following installations to operate
+* python3.8
+* pyperclip
+ 
+ #### Cloning
+ 
 * Open Terminal {Ctrl+Alt+T}
 
 ```
