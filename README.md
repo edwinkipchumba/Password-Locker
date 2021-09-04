@@ -7,7 +7,7 @@
  ## Description
 python application that manages user passwords and generates new passwords for different accounts
 
-<img src="">
+<img src="./images/Screenshot%20from%202021-09-04%2017-19-24.png">
 
 ## Live page
 https://github.com/edwinkipchumba/Password-Locker

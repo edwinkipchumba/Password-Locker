@@ -29,7 +29,7 @@ class UserTest(unittest.TestCase):
         test method to test if user has been saved into class list
         '''
         self.new_user.save_user()
-        self.assertEqual(len(User.data_user), 1)
+        self.assertEqual(len(User.data_user),1)
 
 class User_classTest(unittest.TestCase):
     def setUp(self):
