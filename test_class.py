@@ -52,3 +52,24 @@ def display_account():
     function to display all accounts saved
     '''
     return Credentials.display_accounts()
+
+def main():
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+
+    print("\nHello and welcome!")
+    print("\n 1. Create an account  \n 2. Exit app")
+    option = input()
+
+    if option == '1':
+        print("Enter your name")
+        lock_owner = input()
+        if not lock_owner:
+            print("Please enter your encrypting details")
+            
+        else:
+                print("Enter your password")
+
