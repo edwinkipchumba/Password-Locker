@@ -35,4 +35,20 @@ def delete_accounts(credentials):
     '''
     credentials.delete_account()
 
-def 
+def search_accounts(search):
+    '''
+    function to find an account by account name
+    '''
+    return Credentials.search_accounts(search)
+def generate_password():
+    '''
+    function to generate a password
+    '''
+    random_password = Credentials.password_generate()
+    return random_password
+
+def display_account():
+    '''
+    function to display all accounts saved
+    '''
+    return Credentials.display_accounts()
