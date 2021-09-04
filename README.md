@@ -13,13 +13,19 @@ python application that manages user passwords and generates new passwords for d
 https://github.com/edwinkipchumba/Password-Locker
 
 
-## BDD
-1. Allow user to create a new password locker account
-2. Save existing account credentials
-3. save credential account without geneate a new password
-4. Generate new password for credential accounts
-5. Delete an existing credentials account
-6. View credentials accounts and their details
+## Behaviuor Driven Development (BDD)
+|Behaviour | Input | Output
+|:-----------------| :--------------:|------------------:|
+|Open the application on the terminal| Run the command  ```$ ./test_class.py ```| Hello and welcome! <br> 1. Create an account <br> 2. Exit app |
+|Select 1| Enter your name| Enter your password|
+|Edu| Enter your password again to login| You have successfuly loggedin|
+|aa| ADD an account| Enter an existing account eg Facebook|
+|ga| Account name eg Facebook| Username|
+|da|Your account has been created successfully|New account:facebook username: da.. password: e9gv&1&z|
+|sa|Enter an account type to search eg facebook facebook|Here's what we've found "account name and password"|
+|d|Enter the account name for the record you want to delete e.g facebook facebook| The account has been deleted successfully. Here is a list of your remaining accounts|
+|ex||Have a nice, edu|
+
 
 
 ## Installation/Setup instruction
